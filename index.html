@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Connect 4 Game</h1>
+    <h2 id="winner"></h2>
+    <div class="button-container">
+        <button id="replay" onclick="resetGame()" style="display:none;">Replay</button>
+    </div>
+    <div class="container">
+        <div class="player-one">
+            <h3>Player Red</h3>
+            <div class="red-ball"></div>
+            <h4>Score: <span id="red-score">0</span></h4>
+        </div>
+        <div id="board"></div>
+        <div class="player-two">
+            <h3>Player Yellow</h3>
+            <div class="yellow-ball"></div>
+            <h4>Score: <span id="yellow-score">0</span></h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
